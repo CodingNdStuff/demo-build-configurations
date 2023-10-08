@@ -3,3 +3,4 @@
     web: 
       - assets/Camille.png
       - lib/widgets/my_widget.dart
+      - lib/screens/my_screen.dart

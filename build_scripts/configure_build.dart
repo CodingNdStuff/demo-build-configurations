@@ -53,12 +53,12 @@ void processClasses(
 
     if (flowType == FlowType.pre && !startFileContent.contains(annotation)) {
       startFileContent =
-          "  ${annotationTemplate.replaceFirst("@", flavorName)}\n$startFileContent";
+          "${annotationTemplate.replaceFirst("@", flavorName)}\n$startFileContent";
     }
 
     if (flowType == FlowType.pre && !destFileContent.contains(annotation)) {
       destFileContent =
-          "  ${annotationTemplate.replaceFirst("@", "DEFAULT")}\n//  YOU CAN LEAVE THIS ONE EMPTY.\n$destFileContent";
+          "${annotationTemplate.replaceFirst("@", "DEFAULT")}\n//  YOU CAN LEAVE THIS ONE EMPTY.\n$destFileContent";
     }
 
     startFile.writeAsStringSync(destFileContent);
@@ -70,8 +70,8 @@ void processClasses(
 }
 
 const cwd = ".";
-const annotation = """//###FLAVOR:""";
-const annotationTemplate = """//###FLAVOR: @###""";
+const annotation = """//  ###FLAVOR:""";
+const annotationTemplate = """//  ###FLAVOR: @###""";
 
 enum FlowType {
   pre,
