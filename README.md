@@ -10,9 +10,8 @@ The scrips for now can:
 
 ## TODO
 The scripts desired functionalities:
-- CWD awareness in scripts, to make it more flexible.
 - Swapping whole directories.
-- Including/excluding assets files.
+- Including/excluding assets files. (work in progress, very buggy)
 - Including/excluding assets directories.
 
 ## Setup & Usage

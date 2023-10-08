@@ -1,5 +1,6 @@
-//###FLAVOR: DEFAULT###
-//YOU CAN LEAVE THIS ONE EMPTY.
+//  ###FLAVOR: DEFAULT###
+//  YOU CAN LEAVE THIS ONE EMPTY.
+
 import 'package:flutter/material.dart';
 
 class MyWidget extends StatelessWidget {

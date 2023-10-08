@@ -3,16 +3,14 @@
 import 'dart:io';
 import 'src/flavor.dart';
 import 'src/flavors.dart';
+import 'src/utils.dart';
 import 'yaml-master/lib/yaml.dart';
 
 void main() {
-  File configFile = File('build_scripts/config.yaml');
+  File configFile = File('${Utils.path}/config.yaml');
   if (!configFile.existsSync()) {
-    configFile = File('config.yaml');
-    if (!configFile.existsSync()) {
-      throw const FileSystemException(
-          "Expected path: build_scripts/config.yaml. Make sure your directory tree mathes this path");
-    }
+    throw const FileSystemException(
+        "Expected path: build_scripts/config.yaml. Make sure your directory tree mathes this path");
   }
   final yamlContent = configFile.readAsStringSync();
   final yamlMap = loadYaml(yamlContent) as Map<dynamic, dynamic>;
@@ -24,7 +22,7 @@ void main() {
 }
 
 void generateVscodeFolder(Flavors flavorConfig) {
-  Directory vscodeDir = Directory(".vscode");
+  Directory vscodeDir = Directory("${Utils.parentPath}/.vscode");
   if (!vscodeDir.existsSync()) vscodeDir.createSync();
 
   if (flavorConfig.flavors.isEmpty) {

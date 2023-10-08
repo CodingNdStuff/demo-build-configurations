@@ -12,14 +12,14 @@
             "type": "dart",
             "request": "launch",
             "program": "configure_build.dart",
-            "args": ["pre"]
+            "args": ["pre", "web"]
         },
         {
             "name": "ConfigureBuildPost",
             "type": "dart",
             "request": "launch",
             "program": "configure_build.dart",
-            "args": ["post"]
+            "args": ["post", "web"]
         },
     ]
 }
