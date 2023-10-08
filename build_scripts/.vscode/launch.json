@@ -1,0 +1,25 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Init",
+            "type": "dart",
+            "request": "launch",
+            "program": "init.dart"
+        },
+        {
+            "name": "ConfigureBuildPre",
+            "type": "dart",
+            "request": "launch",
+            "program": "configure_build.dart",
+            "args": ["pre"]
+        },
+        {
+            "name": "ConfigureBuildPost",
+            "type": "dart",
+            "request": "launch",
+            "program": "configure_build.dart",
+            "args": ["post"]
+        },
+    ]
+}

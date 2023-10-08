@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MULTI-DEBUG",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "type": "dart",
+      "flutterMode": "debug",
+      "preLaunchTask": "configureBuildPre",
+      "postDebugTask": "configureBuildPost",
+      "toolArgs": ["--dart-define", "FLAVOR=multi"]
+    },
+    {
+      "name": "MULTI-RELEASE",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "type": "dart",
+      "flutterMode": "release",
+      "preLaunchTask": "configureBuildPre",
+      "postDebugTask": "configureBuildPost",
+      "toolArgs": ["--dart-define", "FLAVOR=multi"]
+    },
+    {
+      "name": "WEB-DEBUG",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "type": "dart",
+      "flutterMode": "debug",
+      "preLaunchTask": "configureBuildPre",
+      "postDebugTask": "configureBuildPost",
+      "toolArgs": ["--dart-define", "FLAVOR=web"]
+    },
+    {
+      "name": "WEB-RELEASE",
+      "request": "launch",
+      "program": "lib/main.dart",
+      "type": "dart",
+      "flutterMode": "release",
+      "preLaunchTask": "configureBuildPre",
+      "postDebugTask": "configureBuildPost",
+      "toolArgs": ["--dart-define", "FLAVOR=web"]
+    }
+  ]
+}

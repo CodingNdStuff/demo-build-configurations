@@ -1,0 +1,5 @@
+ flavors:
+    multi:
+    web: 
+      - assets/Camille.png
+      - lib/widgets/my_widget.dart

@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+{
+            "label": "configureBuildPre-multi",
+            "type": "shell",
+            "command": "dart",
+            "args": [".\\build_scripts\\configure_build.dart", "'pre' 'multi'"],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "configureBuildPost-multi",
+            "type": "shell",
+            "command": "dart",
+            "args": [".\\build_scripts\\configure_build.dart", "'post' 'multi'"],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+{
+            "label": "configureBuildPre-web",
+            "type": "shell",
+            "command": "dart",
+            "args": [".\\build_scripts\\configure_build.dart", "'pre' 'web'"],
+            "presentation": {
+                "reveal": "always"
+            }
+        },
+        {
+            "label": "configureBuildPost-web",
+            "type": "shell",
+            "command": "dart",
+            "args": [".\\build_scripts\\configure_build.dart", "'post' 'web'"],
+            "presentation": {
+                "reveal": "always"
+            }
+        }
+    ]
+}
