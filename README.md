@@ -1,4 +1,4 @@
-# demo_build_configurations
+# demo_build_configurations-flutter
 
 A new Flutter project to develop build configuration scripts.
 
